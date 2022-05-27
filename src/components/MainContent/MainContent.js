@@ -30,11 +30,27 @@ const Wrapper = styled(MaxWidthWrapper)`
     We haven't covered grid yet, but we'll learn more about
     this technique in a future module!
   */
+  /*
   display: grid;
   grid-gap: 16px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  */
+  column-count: 3;
   padding-top: 128px;
   padding-bottom: 128px;
+  
+  & article {
+    padding-bottom: 16px;
+  }
+  
+  @media (max-width: ${930 / 16}rem) {
+    column-count: 2;
+  }
+
+  @media (max-width: ${500 / 16}rem) {
+    column-count: 1;
+  }
+  
 `;
 
 export default MainContent;

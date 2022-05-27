@@ -39,7 +39,7 @@ const Anchor = styled.a`
 const Image = styled.img`
   display: block;
   width: 100%;
-  max-height: 300px;
+  /*max-height: 300px;*/
   object-fit: cover;
   border-radius: 2px;
   margin-bottom: 8px;
